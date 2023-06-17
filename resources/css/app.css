@@ -5,3 +5,12 @@
 [x-cloak] {
     display: none;
 }
+
+.btn {
+  @apply px-3 rounded-md py-2 h-8 min-h-8 text-xs leading-3;
+}
+
+.input,.stats{
+    @apply rounded-md
+}
+

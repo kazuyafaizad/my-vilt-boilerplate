@@ -27,7 +27,8 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
         </template>
 
         <div class="mb-4 text-sm text-gray-600">
-            Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.
+            Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you
+            didn't receive the email, we will gladly send you another.
         </div>
 
         <div v-if="verificationLinkSent" class="mb-4 font-medium text-sm text-green-600">
@@ -41,19 +42,13 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
                 </PrimaryButton>
 
                 <div>
-                    <Link
-                        :href="route('profile.show')"
-                        class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    >
-                        Edit Profile</Link>
+                    <Link :href="route('profile.show')"
+                        class="underline text-sm text-gray-600 hover:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Edit Profile</Link>
 
-                    <Link
-                        :href="route('logout')"
-                        method="post"
-                        as="button"
-                        class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-2"
-                    >
-                        Log Out
+                    <Link :href="route('logout')" method="post" as="button"
+                        class="underline text-sm text-gray-600 hover:text-base rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-2">
+                    Log Out
                     </Link>
                 </div>
             </div>
